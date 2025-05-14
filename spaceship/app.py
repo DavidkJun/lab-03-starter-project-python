@@ -23,6 +23,6 @@ def make_app(settings: Settings) -> FastAPI:
 
     @app.get('/', include_in_schema=False, response_class=FileResponse)
     async def root() -> str:
-        return 'build/index.html'
+        return 'This is message from Davyd, HAVE A GOOD DAY EVERYONE'
 
     return app
